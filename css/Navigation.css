@@ -1,0 +1,112 @@
+main {
+    overflow: hidden;
+}
+#big_box{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.floor_box{
+    /* position: absolute; */
+    width: 500px;
+    height: 300px;
+    left: 15%;
+    top: 40%;
+    background: #000000;
+    margin: 0 auto;
+    padding: 10px 50px;
+    margin-top: 450px;
+
+}
+.floor_list{
+    position: relative;
+    height: 75px;
+}
+.floor_nb{
+    /* position: absolute; */
+    display: flex;
+    float: left;
+    top: 25px;
+    left: 10px;
+    color: #ffffff;
+
+}
+.floor_item{
+    /* position: absolute; */
+    display: flex;
+    top: 25px;
+    left: 15%;
+    list-style: none;
+}
+.floor_item li{
+    padding-left: 20px;
+}
+.floor_item li a{
+    text-decoration: none;
+    font-family: '微軟正黑體';
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+.floor_item li :hover{
+    text-decoration: none;
+    color: #fff;
+}
+.floor_image{
+    /* position: absolute; */
+    
+    right: 15%;
+    top: 25%;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+/* 館內資訊 */
+#title-big {
+    text-align: center;
+    padding: 50px;
+}
+#info_box {
+    /* display: grid; */
+    /* grid-template-columns: repeat (3, 1fr); */
+    /* grid-gap: 20px; */
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+    margin: 20px auto 0;
+}
+
+.info img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.info img:hover {
+    border-radius: 10px;
+}
+
+.info_mini h3{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.info_mini p {
+    text-align: center;
+}
+footer{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    left: 0%;
+    top: 200%;
+    background: #301A53;
+}

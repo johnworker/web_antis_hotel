@@ -1,0 +1,567 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+body{
+    font-family: Arial, Helvetica, '微軟正黑體', 'Microsoft JhengHei', '黑體-繁', 'Heiti TC',sans-serif,' Noto Sans';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+/* 檔頭區 */
+header{
+    position: fixed;
+    display: flex;
+    height: 120px;/* height: 16% */
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 9;
+    background-color: rgba(20, 43, 86);
+}
+.logo{
+    position: absolute;
+    width: 250px;
+    height: 120px;
+    left: 0.2%;
+    top: 0.5%;
+    z-index: 10;
+    background: #E0B97D;
+    border-radius: 0px 0px 50px 50px;
+}
+.logo a{
+    position: absolute;
+    width: 250px;
+    height: 120px;
+    left: 0;
+    top: 0;}
+font{
+    position: absolute;    
+    width: 160px;    
+    height: 84px;
+    left: 70px;    
+    top: 33px;
+}
+.font h1{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    font-family:'Noto Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 61px;
+    letter-spacing: 0.07em;
+    color: #142B56;
+}
+.font h2{
+    position: absolute;
+    left: 27%;
+    top: 60%;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.4em;
+    color: #142B56;
+
+}
+header nav{
+    position: absolute;
+    width: 700px;
+    height: 150px;
+    left: 0;
+    top: 0px;
+}
+header ul{
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    width: 636.19px;
+    height: 30px;
+    left: 12px;
+    top: 45px;
+}
+header li{
+    display: flex;
+    flex: 4;
+    left: 1.71%;
+    top: 40%;
+    flex-direction:column;/* 控制子層div垂直排列 */
+    position: relative; /* 設為子層div定位依據 */
+    
+    /*justify-content:center; 主軸對齊，控制子層<a> */
+    /*align-items: center; 副軸對齊，控制子層<a> */
+}
+.menu{
+    flex: 4;/* <ul>子元素(第二層)比例分配 */
+    /* padding: 1%; */
+}
+.menu li:nth-child(n+2){  /* 從第二個孩子之後 */
+    border-left: solid 1px #666; 
+}
+header a{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+header li :hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#nav_down{
+    flex:8; /* <nav>子元素(第一層)比例分配 */
+    display: flex;/* 父元素(第二層) */
+    align-items: center;/* 副軸對齊:垂直置中 */
+}
+#nav_down ul{
+    list-style: none;
+    display: flex;/* 父元素(第三層) */
+    left: 50%;
+}
+#nav_down li{
+    flex: 1;/* <li>子元素(第三層)比例分配 */
+    display: flex;/* 父元素(第四層) */
+
+    flex-direction:column;/* 控制子層div垂直排列 */
+    position: relative; /* 設為子層div定位依據 */
+    
+    /*justify-content:center; 主軸對齊，控制子層<a> */
+    /*align-items: center; 副軸對齊，控制子層<a> */
+}
+.menu li div{
+    display: none;
+    position: absolute;
+    top: 210%;
+    left: 18%;
+    width: 65%;
+    text-align: center;
+    z-index: 999;
+    background-color: rgba(20, 43, 86,.5);
+}
+.menu li div a{
+    border-left: none;
+    border-bottom: dotted 1px #555;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(20, 43, 86);
+}
+.menu li div :hover{
+    lighting-color: rgb(78, 140, 255);
+}
+.menu li div a:last-child{
+    border: none;
+}
+.icon{
+    display: flex;
+    position: absolute;
+    right: 3%;
+    top: 35%;
+    width: 90px;
+}
+.facebook{
+    flex: 1;
+}
+.instagram{
+    flex: 1;
+    left: 25%;
+}
+/* 換圖輪播 */
+#carouselExampleControls img{
+    height: 100vh!important;
+    object-fit: cover;
+}
+.carousel-inner img{
+    /* filter: blur(2px); */
+    background-color: #301A53;
+    z-index: 1;
+}
+
+.bgcolor{
+    background-color: rgba(0, 9, 26, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.carousel-control-prev,.carousel-control-next{
+    z-index: 5;
+}
+/* 主頁內容 */
+.colormean{
+    z-index: 20;
+}
+.main{
+    position: absolute;
+    width: 820px;
+    height: 459px;
+    left: 50%;
+    top: 50%;
+    z-index: 7;
+}
+.name{
+    position: absolute;
+    width: 346px;
+    height: 231px;
+    left: 40%;
+    top: 25%;
+    text-align: center;
+    z-index: 5;
+}
+.name h2{
+    position: absolute;
+    width: 346px;
+    height: 159px;
+    left: 0;
+    top: 0;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 159px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+.name h3{
+    position: absolute;
+    width: 230px;
+    height: 72px;
+    left: 18%;
+    top: 50%;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 72px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;    
+}
+.enjoy{
+    position: absolute;
+    width: 820px;
+    height: 144px;
+    left: 25%;
+    top: 52%;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    z-index: 5;
+    /* border: 0.5px solid #FFFFFF;  */
+}
+.btn{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 45%;
+    top: 80%;
+    color: #E0B97D;
+    border-radius: 1px; 
+    z-index: 5;
+}
+.btn img{
+    flex: 1;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 0;
+    top: 0;
+}
+h4{
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 40%;
+    top: 125%;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 36px;
+    line-height: 52px;
+    color: #000000;
+    background-color: #E0B97D;
+    border: solid 3px #000000;
+}
+#introduction{
+    display: flex;
+    float: left;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+}
+.contents1{
+    width: 50%;
+    margin: 40% auto;
+    border-left: solid 1px #666;
+}
+.label{
+    margin: 15%;
+}
+.view1 p,.view3 p{
+    margin: 15%;
+}
+.photo1{
+    position: absolute;
+    width: 40%;
+    top: 160%;
+    right: 15%;
+}
+.view1{
+    position: absolute;
+    left: 10%;
+    right: 70%;
+    top: 160%;
+    border-left: solid 1px #666;
+}
+.contents1 img,.contents3 img,.contents5 img{
+    margin: 0 15%;
+}
+.contents2{
+    width: 50%;
+    margin: 40% auto;
+}
+.photo2{
+    position: absolute;
+    display: block;
+    width: 40%;
+    top: 230%;
+    left: 4%;
+}
+.view2{
+    position: absolute;
+    left: 68%;
+    right: 9%;
+    top: 230%;
+    border-right: solid 1px #666;
+}
+.view2 p{
+    margin: 15%;
+}
+.contents2 img,.contents4 img{
+    margin: 0 15%;
+}
+.contents3{
+    width: 50%;
+    margin: 40% auto;
+}
+.view3{
+    position: absolute;
+    left: 10%;
+    right: 70%;
+    top: 300%;
+    border-left: solid 1px #666;
+}
+.photo3{
+    position: absolute;
+    width: 40%;
+    top: 300%;
+    right: 15%;
+}
+.view4{
+    position: absolute;
+    left: 68%;
+    right: 9%;
+    top: 370%;
+    border-right: solid 1px #666;
+}
+.view4 p{
+    margin: 15%;
+}
+.photo4{
+    position: absolute;
+    display: block;
+    width: 40%;
+    top: 370%;
+    left: 4%;
+}
+.contents5{
+    width: 50%;
+    margin: 40% auto;
+}
+.view5{
+    position: absolute;
+    left: 10%;
+    right: 70%;
+    top: 440%;
+    border-left: solid 1px #666;
+}
+.view5 p{
+    margin: 15%;
+}
+.photo5{
+    position: absolute;
+    width: 40%;
+    top: 440%;
+    right: 15%;
+}
+/* 感言 */
+.thing{
+    position: absolute;
+    width: 280px;
+    height: 70px;
+    left: 40%;
+    top: 500%;
+    text-align: center;
+}
+/* 頁尾區 */
+footer{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    left: 0%;
+    top: 520%;
+    background: #301A53;
+}
+.contact{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    left: 150px;
+    top: 0%;    
+}
+.business{
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    left: 20%;
+    top: 15%;
+}
+.business h5{
+    position: absolute;
+    left: 24%;
+    top: 0;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 36px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+.business h6{
+    position: absolute;
+    left: 30%; 
+    top: 50%;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.4em;
+    color: #FFFFFF;
+}
+.address{
+    position: absolute;
+    left: 35%;
+    top: 55%;
+    width: 180px;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.contact2{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    left: 50%;
+    top: 0;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #F7F7F7;
+}
+.link1{
+    position: absolute;
+    left: 0;
+    top: 20%;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+.link2{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+.link3{
+    position: absolute;
+    left: 0;
+    top: 60%;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+.contact a{
+    color: white;
+}
+.link1 :hover .link2 :hover .link3 :hover{
+    text-decoration: none;
+    color: white;
+}
+.contact3{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    left: 75%;
+    top: 0%;
+}
+.subscription{
+    position: absolute;
+    width: 135px;
+    height: 25px;
+    left: 0;
+    top: 30%;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.right{
+    position: absolute;
+    width: 290.37px;
+    height: 22px;
+    left: 0;
+    top: 65%;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.07em; 
+    color: #FFFFFF;
+}
