@@ -77,23 +77,26 @@ main {
 .info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    
+    grid-gap: 130px;
     margin: 20px auto 0;
 }
 
 .info img {
     width: 350px;
     height: 350px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     object-fit: cover;
     transition: 0.5s;
 }
 
-.info img:hover {
+/* .info img:hover {
     border-radius: 10px;
-}
+} */
 
+.info article {
+    text-align: center;
+    display: block;
+}
 .info_mini h3{
     text-align: center;
     padding: 10px 0;
