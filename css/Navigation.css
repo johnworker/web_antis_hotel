@@ -79,24 +79,50 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 130px;
     margin: 20px auto 0;
+    position: relative;
+    height: 60vh;
+}
+
+.info_mini {
+    /* position: relative; */
 }
 
 .info img {
     width: 350px;
     height: 350px;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     object-fit: cover;
     transition: 0.5s;
 }
 
-/* .info img:hover {
+.info img:hover {
     border-radius: 10px;
-} */
+}
 
 .info article {
     text-align: center;
+    position: absolute;
     display: block;
+    opacity: 1;
+    top: 0;
+    padding: 230px 0 0 70px;
+    color: #fff;
+    z-index: 10;
+    height: 400px;
+    transition: 0.5s;
 }
+
+/* .info article:hover {
+    text-align: center;
+    display: block;
+    opacity: 1;
+    padding: 0 0 0 70px;
+    top: 240px;
+    color: #fff;
+    z-index: 100;
+    
+} */
+
 .info_mini h3{
     text-align: center;
     padding: 10px 0;
