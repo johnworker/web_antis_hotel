@@ -153,7 +153,11 @@ header li :hover{
     border-bottom: dotted 1px #555;
     height: 50px;
     line-height: 50px;
-    background-color: rgb(20, 43, 86);
+    background-color: #000;
+    transition: 0.5s;
+}
+.menu li div a:hover {
+    background: rgb(60, 0, 100);
 }
 .menu li div :hover{
     lighting-color: rgb(78, 140, 255);
