@@ -1,0 +1,35 @@
+.tra {
+    width: 100%;
+    height: 100vh;
+    padding: 200px;
+}
+
+.btn {
+    position: sticky;
+}
+
+footer {
+    top: 800px;
+}
+
+/* button[type="button"] {
+    text-align: center;
+    display: block;
+} */
+
+.clicker {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+
+.clicker:hover {
+    text-decoration: none !important;
+    color: rgb(122, 122, 122);
+}
+
+.collapse {
+    padding: 10px;
+}
