@@ -285,6 +285,14 @@ header li :hover{
     left: 0;
     top: 0;
 }
+.btn a {
+    position: absolute;
+    color: #fff !important;
+    left: 40%;
+    top: 34%;
+    font-size: 22px;
+    font-weight: 900;
+}
 h4{
     position: absolute;
     width: 350px;
@@ -333,8 +341,20 @@ h4{
     border-left: solid 1px #666;
 }
 .contents1 img,.contents3 img,.contents5 img{
-    margin: 0 15%;
+    margin: 0 auto;
 }
+.explore {
+    position: relative;
+}
+.contents1 a,.contents3 a,.contents5 a{
+    position: absolute;
+    color: #000;
+    font-size: 30px;
+    bottom: 25%;
+    left: 40%;
+    font-weight: 900;
+}
+
 .contents2{
     width: 50%;
     margin: 40% auto;
@@ -357,8 +377,17 @@ h4{
     margin: 15%;
 }
 .contents2 img,.contents4 img{
-    margin: 0 15%;
+    margin: 0 auto;
 }
+.contents2 a,.contents4 a{
+    position: absolute;
+    color: #000;
+    font-size: 30px;
+    bottom: 25%;
+    left: 40%;
+    font-weight: 900;
+}
+
 .contents3{
     width: 50%;
     margin: 40% auto;
