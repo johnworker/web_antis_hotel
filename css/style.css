@@ -266,7 +266,7 @@ header li :hover{
     z-index: 5;
     /* border: 0.5px solid #FFFFFF;  */
 }
-.btn{
+.btnner {
     display: flex;
     position: absolute;
     width: 200px;
@@ -277,7 +277,7 @@ header li :hover{
     border-radius: 1px; 
     z-index: 5;
 }
-.btn img{
+.btnner img {
     flex: 1;
     position: absolute;
     width: 200px;
@@ -285,7 +285,7 @@ header li :hover{
     left: 0;
     top: 0;
 }
-.btn a {
+.btnner a {
     position: absolute;
     color: #fff !important;
     left: 40%;
