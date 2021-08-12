@@ -331,7 +331,7 @@ h4{
     position: absolute;
     width: 40%;
     top: 160%;
-    right: 15%;
+    right: 10%;
 }
 .view1{
     position: absolute;
@@ -364,12 +364,12 @@ h4{
     display: block;
     width: 40%;
     top: 230%;
-    left: 4%;
+    left: 10%;
 }
 .view2{
     position: absolute;
     left: 68%;
-    right: 9%;
+    right: 10%;
     top: 230%;
     border-right: solid 1px #666;
 }
@@ -403,12 +403,12 @@ h4{
     position: absolute;
     width: 40%;
     top: 300%;
-    right: 15%;
+    right: 10%;
 }
 .view4{
     position: absolute;
     left: 68%;
-    right: 9%;
+    right: 10%;
     top: 370%;
     border-right: solid 1px #666;
 }
@@ -420,7 +420,7 @@ h4{
     display: block;
     width: 40%;
     top: 370%;
-    left: 4%;
+    left: 10%;
 }
 .contents5{
     width: 50%;
@@ -440,7 +440,7 @@ h4{
     position: absolute;
     width: 40%;
     top: 440%;
-    right: 15%;
+    right: 10%;
 }
 /* 感言 */
 .thing{
